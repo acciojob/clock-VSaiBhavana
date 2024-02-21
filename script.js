@@ -1,4 +1,4 @@
-document givinglet para = document.querySelector("#timer")
+let para = document.getElementById("#timer")
 function currentTime()
     {
         let date = new Date()
@@ -10,7 +10,5 @@ function currentTime()
         let year = date.getFullYear()
         let time = hourr +":"+ min + ":" + sec
         para.innerHTML = `${month}/${day}/${year},${time}`
-       
-       
     }
-    setInterval(currentTime,1000) error
+setInterval(currentTime,1000)
