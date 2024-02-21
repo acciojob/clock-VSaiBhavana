@@ -8,7 +8,7 @@ function currentTime()
         let day = date.getDay()
         let month = date.getMonth()
         let year = date.getFullYear()
-        let time = hourr +":"+ min + ":" + sec
+        let time = hour+":"+min +":"+sec
         para.innerHTML = `${month}/${day}/${year},${time}`
     }
 setInterval(currentTime,1000)
